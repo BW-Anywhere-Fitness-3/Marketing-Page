@@ -94,6 +94,33 @@ p{
 	font-size:1.8rem;
 }
 
+
+.cta{
+	padding:10px 20px;
+	width:250px;
+	background-color: @accent-color;
+	border: none;
+	border-radius: 25px;
+}
+
+.cta:hover{
+		background-color: @bg-color;
+		color:@font-color;
+}
+
+.cta2{
+	padding:10px 20px;
+	width:250px;
+	background-color: @accent-color;
+	border: none;
+	border-radius: 25px;
+}
+
+.cta2:hover{
+		background-color: @container-color;
+		color:@font-color;
+}
+
 header{
 	display:flex;
 	justify-content:space-between;
@@ -126,22 +153,16 @@ header{
 		position: absolute;
 		bottom: 100px;
 		width:100%;
-		height:170px;
+		height:163px;
 		padding:10px 150px;
+		border-bottom: 3px solid @accent-color;
+		border-top: 3px solid @bg-color;
 
 		p{
 			font-size:2.5rem;
 			font-weight: bold;
 			margin-bottom:20px;
 			color:@bg-color;
-		}
-
-		.cta{
-			padding:10px 20px;
-			width:250px;
-			background-color: @accent-color;
-			border: none;
-			border-radius: 25px;
 		}
 	}
 } // hero section end
@@ -161,43 +182,94 @@ header{
 				width:30%;
 				background-color: @container-color;
 				padding:30px;
-				border-radius: 20px;
-				box-shadow: 0px 3px 10px @shadows;
+				border-radius: 10px;
+				box-shadow: 0px 5px 10px @shadows;
 				margin-bottom:60px;
+				border-top: 2px solid @accent-color;
+				border-bottom: 4px solid @bg-color;
 
 				h2{
 					margin:30px 0px;
 				}
 			}
 		}
-}
+} //site container end
 
 .peopleTestimonials{
 	background-color: @font-color;
 	color: @bg-color;
-	margin-bottom: 60px;
+	margin: 0px auto 40px auto;
 	padding:30px;
 	border-radius: 20px;
 	box-shadow: 0px 3px 10px @shadows;
+	border-top: 2px solid @accent-color;
+	border-bottom: 4px solid @bg-color;
+	width:65%;
 
 	h1{
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		border-bottom: 2px solid @accent-color;
+		padding-bottom: 20px;
 	}
 
 	.testContainer{
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
 		border-bottom: 2px solid @accent-color;
-		padding:30px 0px;
 		
+		img{
+			margin-right: 30px;
+		}
+
+		.content{
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			justify-content: center;
+
+			h4{
+				margin-bottom: 10px;
+			}
+
+
+		}
+	}
+
+	.testContainer2{
+		display: flex;
+		flex-direction: row;
+		
+		img{
+			margin-right: 30px;
+		}
+		.content{
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			justify-content: center;
+		}
 	}
 }
+
+section {
+	.closing{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		h4{
+			margin-bottom: 20px;
+		}
+	}
+}
+
 
 footer{
 	padding:20px 150px;
 	background-color: @shadows;
 	border-top: 3px solid @accent-color;
-	box-shadow: 0px -10px 10px @shadows;
+	box-shadow: 0px -10px 10px @container-color;
 }
