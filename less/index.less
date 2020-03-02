@@ -56,15 +56,148 @@ table {
 @bg-color:#1F1F1F;
 @accent-color:#FF0400;
 @shadows:#000000;
-@border-color:#C9C9C9;
 @container-color:#3A3A3C;
 @font-color:#EDEDED;
 
 html, body {
     height: 100%;
-    font-family: 'Arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+	background-color:@bg-color;
+	color:@font-color;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bowlby One SC', sans-serif;
+a, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bowlby One SC', sans-serif;
+	letter-spacing: 3px;
+}
+
+h1{
+	font-size:4rem;
+	margin-bottom:15px;
+	color:@bg-color;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+h4{
+	font-size: 2.5rem;
+}
+
+h6{
+	font-size:1.8rem;
+}
+
+p{
+	font-size:1.8rem;
+}
+
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:10px 150px;
+	background-color: @shadows;
+	border-bottom: 3px solid @accent-color;
+	box-shadow: 0px 10px 8px @shadows;
+
+	nav{
+		a{
+			font-size: 2rem;
+			color:@font-color;
+			margin-left: 30px;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color:@accent-color;
+		}
+	}
+} //header section end
+
+.hero{
+	margin-bottom: 60px;
+	div{
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(255, 255, 255, .6);
+		position: absolute;
+		bottom: 100px;
+		width:100%;
+		height:170px;
+		padding:10px 150px;
+
+		p{
+			font-size:2.5rem;
+			font-weight: bold;
+			margin-bottom:20px;
+			color:@bg-color;
+		}
+
+		.cta{
+			padding:10px 20px;
+			width:250px;
+			background-color: @accent-color;
+			border: none;
+			border-radius: 25px;
+		}
+	}
+} // hero section end
+
+.sitecontainer{
+	width:84%;
+	margin: 0 auto;
+
+		.about{
+			display:flex;
+			justify-content: space-between;
+
+			.cardContainer{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width:30%;
+				background-color: @container-color;
+				padding:30px;
+				border-radius: 20px;
+				box-shadow: 0px 3px 10px @shadows;
+				margin-bottom:60px;
+
+				h2{
+					margin:30px 0px;
+				}
+			}
+		}
+}
+
+.peopleTestimonials{
+	background-color: @font-color;
+	color: @bg-color;
+	margin-bottom: 60px;
+	padding:30px;
+	border-radius: 20px;
+	box-shadow: 0px 3px 10px @shadows;
+
+	h1{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.testContainer{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		border-bottom: 2px solid @accent-color;
+		padding:30px 0px;
+		
+	}
+}
+
+footer{
+	padding:20px 150px;
+	background-color: @shadows;
+	border-top: 3px solid @accent-color;
+	box-shadow: 0px -10px 10px @shadows;
 }
