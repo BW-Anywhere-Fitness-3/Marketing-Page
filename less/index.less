@@ -134,7 +134,7 @@ header{
 		a{
 			font-size: 2rem;
 			color:@font-color;
-			margin-left: 30px;
+			margin-left: 35px;
 			text-decoration: none;
 		}
 
@@ -145,10 +145,16 @@ header{
 } //header section end
 
 .hero{
-	margin-bottom: 60px;
+	margin-bottom: 35px;
+
+	img{
+		box-shadow: 0px 5px 10px @shadows;
+	}
 	div{
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		align-content: flex-start;
 		background-color: rgba(255, 255, 255, .6);
 		position: absolute;
 		bottom: 100px;
@@ -171,6 +177,12 @@ header{
 	width:84%;
 	margin: 0 auto;
 
+		.intro{
+			color:@font-color;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
 		.about{
 			display:flex;
 			justify-content: space-between;
@@ -189,7 +201,7 @@ header{
 				border-bottom: 4px solid @bg-color;
 
 				h2{
-					margin:30px 0px;
+					margin:25px 0px;
 				}
 			}
 		}
