@@ -8,7 +8,8 @@
 
 .cta:hover{
 		background-color: @bg-color;
-		color:@font-color;
+        color:@font-color;
+        cursor: pointer;
 }
 
 .cta2{
@@ -21,15 +22,21 @@
 
 .cta2:hover{
 	background-color: @container-color;
-	color:@font-color;
+    color:@font-color;
+    cursor: pointer;
 }
 
 .hero{
-	margin-bottom: 35px;
+    margin-bottom: 35px;
 
 	img{
-		box-shadow: 0px 5px 10px @shadows;
-	}
+        box-shadow: 0px 5px 10px @shadows;
+        
+        @media @tablet{
+            box-shadow: none;
+        }
+    }
+
 
 	div{
 		display: flex;
@@ -37,36 +44,68 @@
 		align-items: center;
 		align-content: flex-start;
 		background-color: rgba(255, 255, 255, .6);
-		position: absolute;
-		bottom: 100px;
+        position: absolute;
+		bottom: 10rem;
 		width:100%;
 		height:163px;
 		padding:10px 150px;
 		border-bottom: 5px solid @accent-color;
-		border-top: 5px solid @bg-color;
+        border-top: 5px solid @bg-color;
+        
+        @media @desktop{
+            position: absolute;
+            bottom: 25rem;
+            background-color: @font-color;
+        }
+
+        @media @tablet{
+            position: static;
+        }
+
+        @media @mobile{
+            padding:20px;
+            height:235px;
+        }
 
 		p{
 			font-size:2.5rem;
 			font-weight: bold;
 			margin-bottom:20px;
-			color:@bg-color;
-		}
+            color:@bg-color;
+            
+            @media @mobile{
+                font-size:2.2rem;
+            }
+        }
 	}
 } // hero section end
 
 .sitecontainer{
 	width:84%;
-	margin: 0 auto;
+    margin: 0 auto;
+    
+    @media @mobile{
+        width:90%;
+    }
 
 		.intro{
 			color:@font-color;
 			text-align: center;
-			margin-bottom: 20px;
+            margin-bottom: 20px;
+            
+            @media @mobile{
+                margin-bottom: 25px;
+                font-size: 2.8rem;
+            }
 		}
 
 		.about{
 			display:flex;
-			justify-content: space-between;
+            justify-content: space-between;
+            
+            @media @mobile{
+                flex-direction: column;
+            }
 
 			.cardContainer{
 				display: flex;
@@ -79,10 +118,20 @@
 				box-shadow: 0px 5px 10px @shadows;
 				margin-bottom:60px;
 				border-top: 2px solid @accent-color;
-				border-bottom: 4px solid @bg-color;
+                border-bottom: 4px solid @bg-color;
+                
+                @media @mobile{
+                    width:100%;
+                    margin-bottom:40px;
+                    padding:20px 15px;
+                }
 
 				h2{
-					margin:25px 0px;
+                    margin:25px 0px;
+                    
+                    @media @mobile{
+                        margin:20px 0px;
+                    }
 				}
 			}
         }
@@ -97,6 +146,10 @@
             border-top: 3px solid @accent-color;
             border-bottom: 4px solid @bg-color;
             width:65%;
+
+            @media @mobile{
+                width:100%;
+            }
         
             h1{
                 text-align: center;
@@ -111,6 +164,10 @@
                 margin-bottom: 20px;
                 padding-bottom: 20px;
                 border-bottom: 2px solid @accent-color;
+
+                @media @mobile{
+                    align-items: center;
+                }
                 
                 img{
                     margin-right: 30px;
@@ -161,6 +218,10 @@
                 
                 h4{
                     margin-bottom: 20px;
+
+                    @media @mobile{
+                        margin-bottom: 25px;
+                    }
                 }
             }
         }

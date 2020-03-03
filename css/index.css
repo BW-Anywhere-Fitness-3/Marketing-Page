@@ -153,17 +153,82 @@ h1 {
   margin-bottom: 15px;
   color: #1F1F1F;
 }
+@media (max-width:500px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 h2 {
   font-size: 3rem;
 }
+@media (max-width:500px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 h4 {
   font-size: 2.5rem;
+}
+@media (max-width:500px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 h6 {
   font-size: 1.8rem;
 }
 p {
   font-size: 1.8rem;
+  line-height: 1.2;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+  background-color: #000000;
+  border-bottom: 3px solid #FF0400;
+  box-shadow: 0px 10px 8px #000000;
+}
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+}
+@media (max-width:500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav a {
+  font-size: 2rem;
+  color: #EDEDED;
+  margin-left: 35px;
+  text-decoration: none;
+}
+@media (max-width:500px) {
+  header nav a {
+    font-size: 2rem;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+header nav a:hover {
+  color: #FF0400;
+}
+footer {
+  padding: 20px 150px;
+  background-color: #000000;
+  border-top: 3px solid #FF0400;
+  text-align: center;
+}
+@media (max-width:500px) {
+  footer {
+    padding: 20px 20px;
+  }
 }
 .cta {
   padding: 10px 20px;
@@ -175,6 +240,7 @@ p {
 .cta:hover {
   background-color: #1F1F1F;
   color: #EDEDED;
+  cursor: pointer;
 }
 .cta2 {
   padding: 10px 20px;
@@ -186,30 +252,18 @@ p {
 .cta2:hover {
   background-color: #3A3A3C;
   color: #EDEDED;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 150px;
-  background-color: #000000;
-  border-bottom: 3px solid #FF0400;
-  box-shadow: 0px 10px 8px #000000;
-}
-header nav a {
-  font-size: 2rem;
-  color: #EDEDED;
-  margin-left: 35px;
-  text-decoration: none;
-}
-header nav a:hover {
-  color: #FF0400;
+  cursor: pointer;
 }
 .hero {
   margin-bottom: 35px;
 }
 .hero img {
   box-shadow: 0px 5px 10px #000000;
+}
+@media (max-width:1024px) {
+  .hero img {
+    box-shadow: none;
+  }
 }
 .hero div {
   display: flex;
@@ -218,12 +272,30 @@ header nav a:hover {
   align-content: flex-start;
   background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
-  bottom: 100px;
+  bottom: 10rem;
   width: 100%;
   height: 163px;
   padding: 10px 150px;
   border-bottom: 5px solid #FF0400;
   border-top: 5px solid #1F1F1F;
+}
+@media (max-width:1600px) {
+  .hero div {
+    position: absolute;
+    bottom: 25rem;
+    background-color: #EDEDED;
+  }
+}
+@media (max-width:1024px) {
+  .hero div {
+    position: static;
+  }
+}
+@media (max-width:500px) {
+  .hero div {
+    padding: 20px;
+    height: 235px;
+  }
 }
 .hero div p {
   font-size: 2.5rem;
@@ -231,18 +303,39 @@ header nav a:hover {
   margin-bottom: 20px;
   color: #1F1F1F;
 }
+@media (max-width:500px) {
+  .hero div p {
+    font-size: 2.2rem;
+  }
+}
 .sitecontainer {
   width: 84%;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .sitecontainer {
+    width: 90%;
+  }
 }
 .sitecontainer .intro {
   color: #EDEDED;
   text-align: center;
   margin-bottom: 20px;
 }
+@media (max-width:500px) {
+  .sitecontainer .intro {
+    margin-bottom: 25px;
+    font-size: 2.8rem;
+  }
+}
 .sitecontainer .about {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  .sitecontainer .about {
+    flex-direction: column;
+  }
 }
 .sitecontainer .about .cardContainer {
   display: flex;
@@ -257,10 +350,22 @@ header nav a:hover {
   border-top: 2px solid #FF0400;
   border-bottom: 4px solid #1F1F1F;
 }
+@media (max-width:500px) {
+  .sitecontainer .about .cardContainer {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 20px 15px;
+  }
+}
 .sitecontainer .about .cardContainer h2 {
   margin: 25px 0px;
 }
-.peopleTestimonials {
+@media (max-width:500px) {
+  .sitecontainer .about .cardContainer h2 {
+    margin: 20px 0px;
+  }
+}
+.sitecontainer .peopleTestimonials {
   background-color: #EDEDED;
   color: #1F1F1F;
   margin: 0px auto 40px auto;
@@ -271,60 +376,118 @@ header nav a:hover {
   border-bottom: 4px solid #1F1F1F;
   width: 65%;
 }
-.peopleTestimonials h1 {
+@media (max-width:500px) {
+  .sitecontainer .peopleTestimonials {
+    width: 100%;
+  }
+}
+.sitecontainer .peopleTestimonials h1 {
   text-align: center;
   margin-bottom: 20px;
   border-bottom: 2px solid #FF0400;
   padding-bottom: 20px;
 }
-.peopleTestimonials .testContainer {
+.sitecontainer .peopleTestimonials .testContainer {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid #FF0400;
 }
-.peopleTestimonials .testContainer img {
+@media (max-width:500px) {
+  .sitecontainer .peopleTestimonials .testContainer {
+    align-items: center;
+  }
+}
+.sitecontainer .peopleTestimonials .testContainer img {
   margin-right: 30px;
   border-radius: 50%;
 }
-.peopleTestimonials .testContainer .content {
+.sitecontainer .peopleTestimonials .testContainer .content {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   justify-content: center;
 }
-.peopleTestimonials .testContainer .content h4 {
+.sitecontainer .peopleTestimonials .testContainer .content h4 {
   margin-bottom: 10px;
 }
-.peopleTestimonials .testContainer2 {
+.sitecontainer .peopleTestimonials .testContainer2 {
   display: flex;
   flex-direction: row;
 }
-.peopleTestimonials .testContainer2 img {
+.sitecontainer .peopleTestimonials .testContainer2 img {
   margin-right: 30px;
   border-radius: 50%;
 }
-.peopleTestimonials .testContainer2 .content {
+.sitecontainer .peopleTestimonials .testContainer2 .content {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   justify-content: center;
 }
-.peopleTestimonials .testContainer2 .content h4 {
+.sitecontainer .peopleTestimonials .testContainer2 .content h4 {
   margin-bottom: 10px;
 }
-section .closing {
+.sitecontainer section .closing {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section .closing h4 {
+.sitecontainer section .closing h4 {
   margin-bottom: 20px;
 }
-footer {
-  padding: 20px 150px;
-  background-color: #000000;
-  border-top: 3px solid #FF0400;
+@media (max-width:500px) {
+  .sitecontainer section .closing h4 {
+    margin-bottom: 25px;
+  }
+}
+.tp_sitecontainer {
+  width: 70%;
+  margin: 0 auto;
+}
+.tp_sitecontainer .tp_intro {
+  color: #EDEDED;
   text-align: center;
+  margin: 60px 0px 40px 0px;
+}
+.tp_sitecontainer .team {
+  display: flex;
+  justify-content: space-between;
+}
+.tp_sitecontainer .team .cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #3A3A3C;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #000000;
+  margin-bottom: 60px;
+  border-top: 2px solid #FF0400;
+  border-bottom: 4px solid #1F1F1F;
+}
+.tp_sitecontainer .team .cardContainer h2 {
+  margin: 25px 0px;
+}
+.tp_sitecontainer .teamPL {
+  display: flex;
+  justify-content: center;
+}
+.tp_sitecontainer .cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #3A3A3C;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #000000;
+  margin-bottom: 60px;
+  border-top: 2px solid #FF0400;
+  border-bottom: 4px solid #1F1F1F;
+}
+.tp_sitecontainer .cardContainer h2 {
+  margin: 25px 0px;
 }
