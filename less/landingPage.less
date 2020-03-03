@@ -1,0 +1,168 @@
+.cta{
+	padding:10px 20px;
+	width:250px;
+	background-color: @accent-color;
+	border: none;
+	border-radius: 25px;
+}
+
+.cta:hover{
+		background-color: @bg-color;
+		color:@font-color;
+}
+
+.cta2{
+	padding:10px 20px;
+	width:250px;
+	background-color: @accent-color;
+	border: none;
+	border-radius: 25px;
+}
+
+.cta2:hover{
+	background-color: @container-color;
+	color:@font-color;
+}
+
+.hero{
+	margin-bottom: 35px;
+
+	img{
+		box-shadow: 0px 5px 10px @shadows;
+	}
+
+	div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: flex-start;
+		background-color: rgba(255, 255, 255, .6);
+		position: absolute;
+		bottom: 100px;
+		width:100%;
+		height:163px;
+		padding:10px 150px;
+		border-bottom: 5px solid @accent-color;
+		border-top: 5px solid @bg-color;
+
+		p{
+			font-size:2.5rem;
+			font-weight: bold;
+			margin-bottom:20px;
+			color:@bg-color;
+		}
+	}
+} // hero section end
+
+.sitecontainer{
+	width:84%;
+	margin: 0 auto;
+
+		.intro{
+			color:@font-color;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.about{
+			display:flex;
+			justify-content: space-between;
+
+			.cardContainer{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width:30%;
+				background-color: @container-color;
+				padding:30px;
+				border-radius: 10px;
+				box-shadow: 0px 5px 10px @shadows;
+				margin-bottom:60px;
+				border-top: 2px solid @accent-color;
+				border-bottom: 4px solid @bg-color;
+
+				h2{
+					margin:25px 0px;
+				}
+			}
+        }
+        
+        .peopleTestimonials{
+            background-color: @font-color;
+            color: @bg-color;
+            margin: 0px auto 40px auto;
+            padding:30px;
+            border-radius: 20px;
+            box-shadow: 0px 3px 10px @shadows;
+            border-top: 3px solid @accent-color;
+            border-bottom: 4px solid @bg-color;
+            width:65%;
+        
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+                border-bottom: 2px solid @accent-color;
+                padding-bottom: 20px;
+            }
+        
+            .testContainer{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid @accent-color;
+                
+                img{
+                    margin-right: 30px;
+                    border-radius: 50%;
+                }
+        
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-content: flex-start;
+                    justify-content: center;
+        
+                    h4{
+                        margin-bottom: 10px;
+                    }
+        
+        
+                }
+            }
+        
+            .testContainer2{
+                display: flex;
+                flex-direction: row;
+                
+                img{
+                    margin-right: 30px;
+                    border-radius: 50%;
+                }
+        
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-content: flex-start;
+                    justify-content: center;
+        
+                    h4{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        
+        section {
+            .closing{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                h4{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+} //site container end
+
