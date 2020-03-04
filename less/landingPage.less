@@ -28,9 +28,13 @@
 
 .hero{
     margin-bottom: 35px;
+    overflow: clip;  /* img Animation */
+    overflow: hidden;  /* img Animation */
 
 	img{
         box-shadow: 0px 5px 10px @shadows;
+        transition: transform 20s; /* img Animation */
+        transform: scale(1.4);  /* img Animation */
         
         @media @tablet{
             box-shadow: none;
@@ -47,7 +51,7 @@
         position: absolute;
 		bottom: 10rem;
 		width:100%;
-		height:163px;
+		height:170px;
 		padding:10px 150px;
 		border-bottom: 5px solid @accent-color;
         border-top: 5px solid @bg-color;
@@ -119,7 +123,9 @@
 				margin-bottom:60px;
 				border-top: 2px solid @accent-color;
                 border-bottom: 4px solid @bg-color;
-                
+                transition: all .2s ease-in-out;
+
+            
                 @media @mobile{
                     width:100%;
                     margin-bottom:40px;
@@ -132,9 +138,11 @@
                     @media @mobile{
                         margin:20px 0px;
                     }
-				}
+                }
+               
+                }
 			}
-        }
+        
         
         .peopleTestimonials{
             background-color: @font-color;

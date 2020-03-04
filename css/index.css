@@ -256,9 +256,17 @@ footer {
 }
 .hero {
   margin-bottom: 35px;
+  overflow: clip;
+  /* img Animation */
+  overflow: hidden;
+  /* img Animation */
 }
 .hero img {
   box-shadow: 0px 5px 10px #000000;
+  transition: transform 20s;
+  /* img Animation */
+  transform: scale(1.4);
+  /* img Animation */
 }
 @media (max-width:1024px) {
   .hero img {
@@ -274,7 +282,7 @@ footer {
   position: absolute;
   bottom: 10rem;
   width: 100%;
-  height: 163px;
+  height: 170px;
   padding: 10px 150px;
   border-bottom: 5px solid #FF0400;
   border-top: 5px solid #1F1F1F;
@@ -349,6 +357,7 @@ footer {
   margin-bottom: 60px;
   border-top: 2px solid #FF0400;
   border-bottom: 4px solid #1F1F1F;
+  transition: all 0.2s ease-in-out;
 }
 @media (max-width:500px) {
   .sitecontainer .about .cardContainer {
@@ -446,6 +455,11 @@ footer {
   width: 70%;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  .tp_sitecontainer {
+    width: 90%;
+  }
+}
 .tp_sitecontainer .tp_intro {
   color: #EDEDED;
   text-align: center;
@@ -454,6 +468,11 @@ footer {
 .tp_sitecontainer .team {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  .tp_sitecontainer .team {
+    flex-direction: column;
+  }
 }
 .tp_sitecontainer .team .cardContainer {
   display: flex;
@@ -467,6 +486,11 @@ footer {
   margin-bottom: 60px;
   border-top: 2px solid #FF0400;
   border-bottom: 4px solid #1F1F1F;
+}
+@media (max-width:500px) {
+  .tp_sitecontainer .team .cardContainer {
+    width: 100%;
+  }
 }
 .tp_sitecontainer .team .cardContainer h2 {
   margin: 25px 0px;
@@ -487,6 +511,11 @@ footer {
   margin-bottom: 60px;
   border-top: 2px solid #FF0400;
   border-bottom: 4px solid #1F1F1F;
+}
+@media (max-width:500px) {
+  .tp_sitecontainer .cardContainer {
+    width: 100%;
+  }
 }
 .tp_sitecontainer .cardContainer h2 {
   margin: 25px 0px;

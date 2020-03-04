@@ -2,6 +2,9 @@
 	width:70%;
 	margin: 0 auto;
 
+	@media @mobile{
+		width:90%;
+	}
 		.tp_intro{
 			color:@font-color;
 			text-align: center;
@@ -11,6 +14,10 @@
 		.team{
 			display:flex;
 			justify-content: space-between;
+
+			@media @mobile{
+				flex-direction: column;
+			}
 
 			.cardContainer{
 				display: flex;
@@ -24,6 +31,10 @@
 				margin-bottom:60px;
 				border-top: 2px solid @accent-color;
 				border-bottom: 4px solid @bg-color;
+
+				@media @mobile{
+					width: 100%;
+				}
 
 				h2{
 					margin:25px 0px;
@@ -47,7 +58,11 @@
             box-shadow: 0px 5px 10px @shadows;
             margin-bottom:60px;
             border-top: 2px solid @accent-color;
-            border-bottom: 4px solid @bg-color;
+			border-bottom: 4px solid @bg-color;
+			
+			@media @mobile{
+				width: 100%;
+			}
 
             h2{
                 margin:25px 0px;
