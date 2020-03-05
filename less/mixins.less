@@ -1,0 +1,30 @@
+.round-borders (@radius) {
+    border-radius: @radius;
+}
+
+.testimonialCard () {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        @media @mobile{
+            align-items: center;
+        }
+        
+        img{
+            margin-right: 30px;
+            border-radius: 50%;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            justify-content: center;
+
+            h4{
+                margin-bottom: 10px;
+            }
+        }
+    }
