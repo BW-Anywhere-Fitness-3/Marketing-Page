@@ -1,0 +1,228 @@
+.cta {
+  padding: 10px 20px;
+  width: 250px;
+  background-color: @accent-color;
+  border: none;
+  .round-borders (25px);
+
+  a {
+    text-decoration: none;
+    color: @shadows;
+  }
+}
+
+.cta:hover {
+  background-color: @bg-color;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: @font-color;
+  }
+}
+
+.cta2 {
+  //footer cta
+  padding: 10px 20px;
+  width: 250px;
+  background-color: @accent-color;
+  border: none;
+  .round-borders (25px);
+
+  a {
+    text-decoration: none;
+    color: @shadows;
+  }
+}
+
+.cta2:hover {
+  //footer cta
+  background-color: @container-color;
+  color: @font-color;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: @font-color;
+  }
+}
+
+.hero {
+  max-height: 625px;
+  box-shadow: 0px 5px 10px @shadows;
+  overflow: clip; /* hides img zoom overflow */
+  overflow: hidden; /* hides img zoom overflow */
+
+  @media @tablet {
+    max-height: 300px;
+  }
+
+  @media @mobile {
+    max-height: 190px;
+  }
+
+  img {
+    transition-duration: 20s; /* img zoom */
+    transform: scale(1.4); /* img zoom */
+
+    @media @tablet {
+      box-shadow: none;
+    }
+  }
+} // hero section end
+
+.hero_overlay {
+  // hero img overlay
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 53rem;
+  width: 100%;
+  height: 170px;
+  padding: 10px 150px;
+  border-bottom: 5px solid @accent-color;
+  border-top: 5px solid @bg-color;
+
+  @media @desktop {
+    position: absolute;
+    top: 53rem;
+  }
+
+  @media @tablet {
+    position: static;
+    padding: 13px 20px;
+    background-color: @font-color;
+    box-shadow: 0px 5px 10px @shadows;
+  }
+
+  @media @mobile {
+    height: 235px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: @bg-color;
+
+    @media @mobile {
+      font-size: 2.2rem;
+    }
+  }
+} // hero img overlay end
+
+.sitecontainer {
+  width: 100%;
+  padding: 0px 125px;
+
+  @media @tablet {
+    padding: 0px 125px;
+  }
+
+  @media @mobile {
+    padding: 0px 20px;
+  }
+
+  .intro {
+    color: @font-color;
+    text-align: center;
+    margin: 40px 0px 30px 0px;
+
+    @media @tablet {
+      margin-bottom: 25px;
+      font-size: 2.8rem;
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cardContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      background-color: @container-color;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px @shadows;
+      margin-bottom: 60px;
+      border-top: 2px solid @accent-color;
+      border-bottom: 4px solid @bg-color;
+
+      @media @tablet {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 20px 15px;
+      }
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      h2 {
+        margin: 20px 0px;
+      }
+    }
+  } // about section end
+
+  .peopleTestimonials {
+    background-color: @font-color;
+    color: @bg-color;
+    margin: 0px auto 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px @shadows;
+    border-top: 3px solid @accent-color;
+    border-bottom: 4px solid @bg-color;
+    width: 65%;
+
+    @media @tablet {
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid @accent-color;
+      padding-bottom: 20px;
+    }
+
+    .testimonialContainer {
+      //rahul & jamie sections
+      .testimonialCard ();
+      border-bottom: 2px solid @accent-color;
+    }
+
+    .testimonialContainer2 {
+      // reba section
+      .testimonialCard ();
+      margin-bottom: -25px;
+    }
+  } // testimonials end
+
+  section {
+    .closing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        margin-bottom: 20px;
+
+        @media @mobile {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+} //site container end

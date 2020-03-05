@@ -1,0 +1,54 @@
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+	background-color:@bg-color;
+	color:@font-color;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bowlby One SC', sans-serif;
+	letter-spacing: 3px;
+}
+
+h1{
+	font-size:4rem;
+	margin-bottom:15px;
+    color:@bg-color;
+    
+    @media @tablet {
+            font-size: 3.5rem;
+    }
+    
+}
+
+h2{
+    font-size: 3rem;
+    
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+}
+
+h4{
+    font-size: 2.5rem;
+    
+    @media @tablet {
+        font-size: 2rem;
+    }
+}
+
+h6{
+	font-size:1.8rem;
+}
+
+p{
+    font-size:1.6rem;
+    line-height: 1.2;
+}
+
