@@ -135,8 +135,8 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
-  background-color: #1F1F1F;
-  color: #EDEDED;
+  background-color: #1f1f1f;
+  color: #ededed;
 }
 a,
 h1,
@@ -151,7 +151,7 @@ h6 {
 h1 {
   font-size: 4rem;
   margin-bottom: 15px;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 @media (max-width:800px) {
   h1 {
@@ -187,8 +187,13 @@ header {
   align-items: center;
   padding: 10px 125px;
   background-color: #000000;
-  border-bottom: 3px solid #FF0400;
+  border-bottom: 3px solid #ff0400;
   box-shadow: 0px 10px 8px #000000;
+}
+@media (max-width:1440px) {
+  header {
+    padding: 10px 60px;
+  }
 }
 @media (max-width:800px) {
   header {
@@ -205,7 +210,7 @@ header {
 }
 header nav a {
   font-size: 2rem;
-  color: #EDEDED;
+  color: #ededed;
   margin-left: 35px;
   text-decoration: none;
 }
@@ -217,12 +222,12 @@ header nav a {
   }
 }
 header nav a:hover {
-  color: #FF0400;
+  color: #ff0400;
 }
 footer {
   padding: 20px 150px;
   background-color: #000000;
-  border-top: 3px solid #FF0400;
+  border-top: 3px solid #ff0400;
   text-align: center;
 }
 @media (max-width:500px) {
@@ -233,7 +238,7 @@ footer {
 .cta {
   padding: 10px 20px;
   width: 250px;
-  background-color: #FF0400;
+  background-color: #ff0400;
   border: none;
   border-radius: 25px;
 }
@@ -242,17 +247,17 @@ footer {
   color: #000000;
 }
 .cta:hover {
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   cursor: pointer;
 }
 .cta:hover a {
   text-decoration: none;
-  color: #EDEDED;
+  color: #ededed;
 }
 .cta2 {
   padding: 10px 20px;
   width: 250px;
-  background-color: #FF0400;
+  background-color: #ff0400;
   border: none;
   border-radius: 25px;
 }
@@ -261,13 +266,13 @@ footer {
   color: #000000;
 }
 .cta2:hover {
-  background-color: #3A3A3C;
-  color: #EDEDED;
+  background-color: #3a3a3c;
+  color: #ededed;
   cursor: pointer;
 }
 .cta2:hover a {
   text-decoration: none;
-  color: #EDEDED;
+  color: #ededed;
 }
 .hero {
   max-height: 625px;
@@ -309,20 +314,20 @@ footer {
   width: 100%;
   height: 170px;
   padding: 10px 150px;
-  border-bottom: 5px solid #FF0400;
-  border-top: 5px solid #1F1F1F;
+  border-bottom: 5px solid #ff0400;
+  border-top: 5px solid #1f1f1f;
 }
-@media (max-width:1600px) {
+@media (max-width:1440px) {
   .hero_overlay {
     position: absolute;
-    top: 53rem;
+    top: 48rem;
   }
 }
 @media (max-width:800px) {
   .hero_overlay {
     position: static;
     padding: 13px 20px;
-    background-color: #EDEDED;
+    background-color: #ededed;
     box-shadow: 0px 5px 10px #000000;
   }
 }
@@ -336,7 +341,7 @@ footer {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 @media (max-width:500px) {
   .hero_overlay p {
@@ -346,6 +351,11 @@ footer {
 .sitecontainer {
   width: 100%;
   padding: 0px 125px;
+}
+@media (max-width:1440px) {
+  .sitecontainer {
+    padding: 0px 60px;
+  }
 }
 @media (max-width:800px) {
   .sitecontainer {
@@ -358,7 +368,7 @@ footer {
   }
 }
 .sitecontainer .intro {
-  color: #EDEDED;
+  color: #ededed;
   text-align: center;
   margin: 40px 0px 30px 0px;
 }
@@ -383,13 +393,18 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px #000000;
   margin-bottom: 60px;
-  border-top: 2px solid #FF0400;
-  border-bottom: 4px solid #1F1F1F;
+  border-top: 2px solid #ff0400;
+  border-bottom: 4px solid #1f1f1f;
+}
+@media (max-width:1440px) {
+  .sitecontainer .about .cardContainer {
+    width: 31%;
+  }
 }
 @media (max-width:800px) {
   .sitecontainer .about .cardContainer {
@@ -407,15 +422,20 @@ footer {
   margin: 20px 0px;
 }
 .sitecontainer .peopleTestimonials {
-  background-color: #EDEDED;
-  color: #1F1F1F;
+  background-color: #ededed;
+  color: #1f1f1f;
   margin: 0px auto 40px auto;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0px 3px 10px #000000;
-  border-top: 3px solid #FF0400;
-  border-bottom: 4px solid #1F1F1F;
+  border-top: 3px solid #ff0400;
+  border-bottom: 4px solid #1f1f1f;
   width: 65%;
+}
+@media (max-width:1440px) {
+  .sitecontainer .peopleTestimonials {
+    width: 68%;
+  }
 }
 @media (max-width:800px) {
   .sitecontainer .peopleTestimonials {
@@ -425,7 +445,7 @@ footer {
 .sitecontainer .peopleTestimonials h1 {
   text-align: center;
   margin-bottom: 20px;
-  border-bottom: 2px solid #FF0400;
+  border-bottom: 2px solid #ff0400;
   padding-bottom: 20px;
 }
 .sitecontainer .peopleTestimonials .testimonialContainer {
@@ -433,7 +453,7 @@ footer {
   flex-direction: row;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #FF0400;
+  border-bottom: 2px solid #ff0400;
 }
 @media (max-width:500px) {
   .sitecontainer .peopleTestimonials .testimonialContainer {
@@ -497,13 +517,18 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width:1440px) {
+  .tp_sitecontainer {
+    padding: 0px 60px;
+  }
+}
 @media (max-width:500px) {
   .tp_sitecontainer {
     padding: 0px 20px;
   }
 }
 .tp_sitecontainer .tp_intro {
-  color: #EDEDED;
+  color: #ededed;
   text-align: center;
   margin: 60px auto 40px auto;
   width: 80%;
@@ -524,13 +549,13 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px #000000;
   margin-bottom: 60px;
-  border-top: 2px solid #FF0400;
-  border-bottom: 4px solid #1F1F1F;
+  border-top: 2px solid #ff0400;
+  border-bottom: 4px solid #1f1f1f;
 }
 @media (max-width:800px) {
   .tp_sitecontainer .team .cardContainer {
@@ -554,13 +579,13 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px #000000;
   margin-bottom: 60px;
-  border-top: 2px solid #FF0400;
-  border-bottom: 4px solid #1F1F1F;
+  border-top: 2px solid #ff0400;
+  border-bottom: 4px solid #1f1f1f;
 }
 @media (max-width:800px) {
   .tp_sitecontainer .cardContainer {
